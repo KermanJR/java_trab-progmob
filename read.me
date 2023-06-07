@@ -20,7 +20,7 @@ Papéis e usuários:
 Requisitos funcionais:
 1. Registro e autenticação:
    - Os usuários devem ser capazes de criar uma nova conta ou fazer login com uma conta existente.
-   - As informações de usuário devem ser armazenadas de forma segura (banco de dados ROOM).
+   - As informações de usuário devem ser armazenadas de forma segura através de hash.
 
 2. Gerenciamento de tarefas:
    - Os usuários devem poder adicionar, editar e excluir tarefas.
@@ -29,7 +29,7 @@ Requisitos funcionais:
 
 3. Gerenciamento de contas (apenas para administradores):
    - O administrador deve poder criar, editar e excluir contas de usuário.
-   - As informações das contas de usuário devem ser armazenadas de forma segura.
+   - As informações das contas de usuário devem ser armazenadas de forma segura através de hash.
 
 4. Estatísticas (apenas para administradores):
    - O administrador deve poder visualizar estatísticas sobre o uso do aplicativo, como número de tarefas concluídas, e o número total de tarefas criadas somando todos os usuários.
