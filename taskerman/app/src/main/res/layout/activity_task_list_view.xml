@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="4"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    tools:context=".views.TaskListView">
+
+    <ListView
+        android:id="@+id/listTask"
+        android:layout_width="409dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="48dp"
+        android:dividerHeight="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btnHomeTask"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F44336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listTask"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/btnAddTask"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintStart_toEndOf="@+id/btnHomeTask"
+        app:layout_constraintTop_toBottomOf="@+id/listTask"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

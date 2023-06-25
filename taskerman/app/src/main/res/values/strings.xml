@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Taskerman</string>
+    <string name="title_activity_curso_list">TaskList</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Anterior</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+<!-- activity_register.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".views.MainActivity">
+
+    <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+        <EditText
+            android:id="@+id/usernameEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/passwordEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameEditTextRegister"
+            android:hint="senha"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/emailEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEditTextRegister"
+            android:hint="e-mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/cadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEditTextRegister"
+            android:layout_marginTop="87dp"
+            android:insetBottom="4dp"
+            android:text="Cadastrar" />
+    </RelativeLayout>
+
+</layout>
